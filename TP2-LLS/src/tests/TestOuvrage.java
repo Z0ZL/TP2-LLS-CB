@@ -7,6 +7,7 @@ import java.util.List;
 import livres.Ouvrage;
 import livres.Auteur;
 import livres.Pays;
+import livres.Serie;
 
 /**
  * CoursPOO 1
@@ -123,6 +124,14 @@ public class TestOuvrage {
         Auteur auteur1 = new Auteur("Bob", "L'autheur", "Canada");
         System.out.println("\nPays d'origine via le constructeur de la classe: " + auteur1.getPaysOrigine());
         
+    }
+
+    private void testSerie() {
+        System.out.println("---> Test des Serie <---");
+        // Création d'ouvrages
+
+        // Création de la série
+        Serie serie1 = new Serie();
     }
 }
 
