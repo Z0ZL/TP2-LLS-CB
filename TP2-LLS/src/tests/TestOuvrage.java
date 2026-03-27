@@ -5,6 +5,7 @@ import java.util.List;
 
 import livres.Ouvrage;
 import livres.Auteur;
+import livres.Pays;
 
 /**
  * CoursPOO 1
@@ -18,6 +19,7 @@ public class TestOuvrage {
         TestOuvrage test = new TestOuvrage();
         test.testOuvrages();
         test.testTrouver();
+        test.testPays();
     }
 
 
@@ -100,6 +102,20 @@ public class TestOuvrage {
 
         resultat = bibliotheque.trouverOuvrages(new Auteur("Jacques", "Beaulieu", "France"));
         System.out.println("Livres de Jacques: " + resultat);
+    }
+
+    private void testPays(){
+        System.out.println("\nVérification de la classe pays");
+        Pays pays1 = new Pays("Canada");
+        System.out.println("\nCode par défault du pays: " + pays1.getCodePays());
+
+        //Test du set pour un code de pays valide
+        pays1.setCodePays("CAD");
+        System.out.println("Code pays modifier et valide: " + pays1.getCodePays());
+
+        //Test du set pour un code de pays invalide
+        pays1.setCodePays("hello");
+        System.out.println("Code pays modifier et invalide: " + pays1.getCodePays() + " il ne change pas puisque que le code donner est invalide");
     }
 
 
