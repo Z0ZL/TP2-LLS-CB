@@ -15,7 +15,7 @@ public class Auteur {
 
     private String prenom = INCONNU;
     private String nom = INCONNU;
-    private String paysOrigine = INCONNU;
+    private Pays paysOrigine;
 
     public Auteur(String prenom, String nom, String paysOrigine) {
         setPrenom(prenom);
@@ -24,7 +24,7 @@ public class Auteur {
     }
 
     public Auteur() {
-        this(INCONNU, INCONNU, INCONNU);
+        this(INCONNU, INCONNU, null);
     }
 
     public String getPrenom() {
@@ -43,12 +43,12 @@ public class Auteur {
         this.nom = nom;
     }
 
-    public String getPaysOrigine() {
+    public Pays getPaysOrigine() {
         return paysOrigine;
     }
 
     private void setPaysOrigine(String paysOrigine) {
-        this.paysOrigine = paysOrigine;
+        this.paysOrigine = new Pays(paysOrigine);
     }
 
     @Override
