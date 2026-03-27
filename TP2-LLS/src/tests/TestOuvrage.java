@@ -29,7 +29,7 @@ public class TestOuvrage {
 
         //Voici une partie des tests! Il faut en ajouter, pour les fonctionnalités non testées!
         System.out.println("-----Test des constructeurs d'ouvrage et des diverses validations-----------");
-        Ouvrage livreA = new OuvragePapier("Titre assez long", john);
+        Ouvrage livreA = new OuvragePapier("Titre assez longs", john);
         System.out.println(livreA);
         Ouvrage livreB = new OuvragePapier("Ti", john);
         System.out.println(livreB);
