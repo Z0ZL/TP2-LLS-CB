@@ -5,19 +5,19 @@ import java.time.LocalDate;
 
 public class OuvrageAudio extends Ouvrage {
     private int dureeMinutes;
-    private String format;
+    private EFormat type;
 
-    public OuvrageAudio(String titre, Auteur auteur, Format type, LocalDate date, int dureeMinutes, String format){
+    public OuvrageAudio(String titre, Auteur auteur, Format type, LocalDate date, int dureeMinutes, EFormat format){
         super(titre, auteur, type);
         this.dureeMinutes = dureeMinutes;
-        this.format = format;
+        this.type = format;
     }
 
     public int getDureeMinutes() {
         return dureeMinutes;
     }
 
-    public String getFormat() {
-        return format;
+    public EFormat getFormat() {
+        return type;
     }
 }
