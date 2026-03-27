@@ -31,7 +31,7 @@ public class TestOuvrage {
         System.out.println("-----Test des constructeurs d'ouvrage et des diverses validations-----------");
         Ouvrage livreA = new OuvragePapier("Titre assez long", john);
         System.out.println(livreA);
-        Ouvrage livreB = new OuvragePapier("Ti", john);
+        Ouvrage livreB = new OuvragePapier("Ti Le livre", john);
         System.out.println(livreB);
         Ouvrage livreC = new OuvragePapier(null, john);
         System.out.println(livreC);
