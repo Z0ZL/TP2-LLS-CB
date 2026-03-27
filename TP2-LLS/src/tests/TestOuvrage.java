@@ -1,5 +1,6 @@
 package tests;
 
+import java.net.Authenticator;
 import java.time.LocalDate;
 import java.util.List;
 
@@ -116,8 +117,12 @@ public class TestOuvrage {
         //Test du set pour un code de pays invalide
         pays1.setCodePays("hello");
         System.out.println("Code pays modifier et invalide: " + pays1.getCodePays() + " il ne change pas puisque que le code donner est invalide");
+
+        System.out.println("\nVérification de la liaison entre un auteur et un pays");
+
+        Auteur auteur1 = new Auteur("Bob", "L'autheur", "Canada");
+        System.out.println("\nPays d'origine via le constructeur de la classe: " + auteur1.getPaysOrigine());
+        
     }
-
-
 }
 
