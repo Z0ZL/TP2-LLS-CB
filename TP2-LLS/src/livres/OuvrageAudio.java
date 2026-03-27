@@ -13,6 +13,11 @@ public class OuvrageAudio extends Ouvrage {
         this.type = format;
     }
 
+    public OuvrageAudio(String titre, Auteur auteur, Format type){
+        super(titre, auteur, type);
+    }
+
+
     public int getDureeMinutes() {
         return dureeMinutes;
     }

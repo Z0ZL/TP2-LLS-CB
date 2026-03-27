@@ -11,6 +11,10 @@ public class OuvragePapier extends Ouvrage{
         this.nombrePages = nombrePages;
     }
 
+    public OuvragePapier(String titre, Auteur auteur){
+        super(titre, auteur);
+    }
+
 
     public int getNombrePages() {
         return nombrePages;
