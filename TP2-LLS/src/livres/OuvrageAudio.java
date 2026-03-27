@@ -1,12 +1,12 @@
 package livres;
 
 
-public class OuvrageAudio {
+public class OuvrageAudio extends Ouvrage {
     private int dureeMinutes;
     private String format;
 
-    public OuvrageAudio(int dureeMinutes, String format){
-        super();
+    public OuvrageAudio(String titre, Auteur auteur, Format type, int dureeMinutes, String format){
+        super(titre, auteur, type);
         this.dureeMinutes = dureeMinutes;
         this.format = format;
     }
